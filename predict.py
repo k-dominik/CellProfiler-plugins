@@ -155,7 +155,8 @@ Select the project type which matches the project file specified by
 
         cmd += [
             "--output_filename_format", fout.name,
-            fin.name
+            "--raw_data", fin.name,
+            "--input_axes", "yx",
         ]
 
         try:
